@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function(){
         //console.log(id);
         document.getElementById(id).remove();
     }
-    
+
     function addTodo(){
         if (tittle.value === '' || description.value == ''){
             alert.classList.remove('d-none');
@@ -20,17 +20,17 @@ document.addEventListener('DOMContentLoaded', function(){
         const row = table.insertRow();
         row.setAttribute('id', id++);
         row.innerHTML = `
-            <td>${tittle.value}</td>
-            <td>${description.value}</td>
-            <td class="text-center">
-                <input type="checkbox">
-            </td>
-            <td class="text-right">
-                <button class="btn btn-primary mb-1">
-                    <i class="fa fa-pencil"></i>
-                </button>
+        <td>${tittle.value}</td>
+        <td>${description.value}</td>
+        <td class="text-center">
+        <input type="checkbox">
+        </td>
+        <td class="text-right">
+        <button class="btn btn-primary mb-1">
+        <i class="fa fa-pencil"></i>
+        </button>
 
-            </td>
+        </td>
         `;
 
         const removeBtn = document.createElement('button');
