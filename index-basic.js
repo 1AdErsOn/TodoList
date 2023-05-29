@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function(){
         if (tittle.value === '' || description.value == ''){
             alert.classList.remove('d-none');
             alert.innerText = 'title and description are required';
+            return;
         }
         alert.classList.add('d-none');
         const row = table.insertRow();
